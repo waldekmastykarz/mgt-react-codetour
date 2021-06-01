@@ -11,7 +11,7 @@
     {
       "file": "package.json",
       "line": 5,
-      "description": "### Instal Microsoft Graph Toolkit npm packages\n\nInstall the `@microsoft/mgt-react`, `@microsoft/mgt-element` and `@microsoft/mgt-msal-provider` packages:\n\n>> npm i @microsoft/mgt-react @microsoft/mgt-element @microsoft/mgt-msal-provider",
+      "description": "### Instal Microsoft Graph Toolkit npm packages\n\nInstall the `@microsoft/mgt-react`, `@microsoft/mgt-element` and `@microsoft/mgt-msal2-provider` packages:\n\n>> npm i @microsoft/mgt-react @microsoft/mgt-element @microsoft/mgt-msal2-provider",
       "title": "Install MGT packages"
     },
     {
@@ -20,14 +20,14 @@
     },
     {
       "file": "src/index.tsx",
-      "description": "### Configure the Microsoft Graph Toolkit authentication provider\n\nNext, configure the authentication provider that the Microsoft Graph Toolkit should use. In this case, you'll use MSAL, which is a good default for building standalone applications.\n\nAdd reference to `MsalProvider` and `Providers`:\n\n```tsx\n\nimport { Providers } from '@microsoft/mgt-element';\nimport { MsalProvider } from '@microsoft/mgt-msal-provider';\n\n```",
-      "title": "Add reference to MsalProvider and Providers",
+      "description": "### Configure the Microsoft Graph Toolkit authentication provider\n\nNext, configure the authentication provider that the Microsoft Graph Toolkit should use. In this case, you'll use MSAL, which is a good default for building standalone applications.\n\nAdd reference to `Msal2Provider` and `Providers`:\n\n```tsx\n\nimport { Providers } from '@microsoft/mgt-element';\nimport { Msal2Provider } from '@microsoft/mgt-msal2-provider';\n\n```",
+      "title": "Add reference to Msal2Provider and Providers",
       "line": 6
     },
     {
       "file": "src/index.tsx",
-      "description": "Initialize Microsoft Graph Toolkit with MSAL provider:\n\n```tsx\n\nProviders.globalProvider = new MsalProvider({\n  clientId: 'REPLACE_WITH_CLIENTID'\n});\n```",
-      "title": "Initialize MGT with MSAL provider",
+      "description": "Initialize Microsoft Graph Toolkit with MSAL 2 provider:\n\n```tsx\n\nProviders.globalProvider = new Msal2Provider({\n  clientId: 'REPLACE_WITH_CLIENTID'\n});\n```",
+      "title": "Initialize MGT with MSAL 2 provider",
       "line": 9
     },
     {
@@ -81,7 +81,7 @@
     },
     {
       "title": "Load data from Microsoft 365",
-      "description": "### Load data from Microsoft 365\n\nMicrosoft Graph Toolkit not only simplifies authentication to Microsoft 365, but also loading its data. In the following steps, you'll show the signed in person's calendar.\n\n#### Specify permissions needed for your application\n\nBefore you can load data from Microsoft 365, you need to specify the list of permission scopes your application must be granted to access user's data. These scopes differ depending on what kind of information you want to show. In this case, you will need access to people's calendar as well as basic access to information about people that is also displayed in the calendar. You can find the scopes required by each API in the [Microsoft Graph API documentation](https://docs.microsoft.com/graph/api/overview).\n\nUpdate provider's initialization code to:\n\n```tsx\nProviders.globalProvider = new MsalProvider({\n  clientId: 'REPLACE_WITH_CLIENTID',\n  scopes: ['calendars.read', 'user.read', 'openid', 'profile', 'people.read', 'user.readbasic.all']\n});\n```",
+      "description": "### Load data from Microsoft 365\n\nMicrosoft Graph Toolkit not only simplifies authentication to Microsoft 365, but also loading its data. In the following steps, you'll show the signed in person's calendar.\n\n#### Specify permissions needed for your application\n\nBefore you can load data from Microsoft 365, you need to specify the list of permission scopes your application must be granted to access user's data. These scopes differ depending on what kind of information you want to show. In this case, you will need access to people's calendar as well as basic access to information about people that is also displayed in the calendar. You can find the scopes required by each API in the [Microsoft Graph API documentation](https://docs.microsoft.com/graph/api/overview).\n\nUpdate provider's initialization code to:\n\n```tsx\nProviders.globalProvider = new Msal2Provider({\n  clientId: 'REPLACE_WITH_CLIENTID',\n  scopes: ['calendars.read', 'user.read', 'openid', 'profile', 'people.read', 'user.readbasic.all']\n});\n```",
       "file": "src/index.tsx",
       "selection": {
         "start": {
