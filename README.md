@@ -1,46 +1,29 @@
-# Getting Started with Create React App
+# Microsoft Graph Toolkit
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This repo contains an interactive tour to help you build your first React app using [Microsoft Graph Toolkit](https://docs.microsoft.com/graph/toolkit/get-started/overview?tabs=html&WT.mc_id=m365-32079-wmastyka) - a collection of reusable, framework-agnostic components and authentication providers for accessing and working with Microsoft Graph. The contents of this tour are based on the [Use the Microsoft Graph Toolkit with React](https://docs.microsoft.com/graph/toolkit/get-started/use-toolkit-with-react?WT.mc_id=m365-32079-wmastyka) walkthrough. The starting point of the project is a React TypeScript app scaffolded using [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+![Mouse pointer hovering over a code tour step in Visual Studio Code](./assets/mgt-codetour.png)
 
-In the project directory, you can run:
+## Prerequisites
 
-### `yarn start`
+- [Microsoft 365 developer tenant](https://developer.microsoft.com/microsoft-365/dev-program?WT.mc_id=m365-32079-wmastyka)
+- [Visual Studio Code](https://code.visualstudio.com/?WT.mc_id=m365-32079-wmastyka)
+- [Visual Studio Code CodeTour extension](https://marketplace.visualstudio.com/items?itemName=vsls-contrib.codetour&WT.mc_id=m365-32079-wmastyka)
+- [Node.js LTS](https://nodejs.org/)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Getting started
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- clone the repo
+- restore project dependencies by executing in the terminal: `npm install`
+- open the project in Visual Studio Code
+- when prompted, start the CodeTour:
 
-### `yarn test`
+    ![Mouse pointer hovering over a green button in a popup window prompting to start a code tour in Visual Studio Code](./assets/codetour-prompt.png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- alternatively, you can start the tour manually from the CodeTour pane:
 
-### `yarn build`
+    ![Mouse pointer hovering over a play button in the code tour pane in Visual Studio Code](./assets/start-codetour-manually.png)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## We'd love your feedback
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+We'd love to hear from you what you think of this way of learning. If you like it, feel free to star the project and share it in your community. If you have suggestions how we could improve, please don't hesitate to create an issue in this repo.
